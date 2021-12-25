@@ -95,7 +95,7 @@ public class PyramidRepositoryImplTest {
         PyramidRepository repository = new PyramidRepositoryImpl();
         repository.add(firstPyramid);
         repository.add(secondPyramid);
-        List<PyramidIdentifiable> expectedQuery = Arrays.asList(secondPyramid, firstPyramid);
+        List<PyramidIdentifiable> expectedQuery = Arrays.asList(firstPyramid, secondPyramid);
         Comparator<PyramidIdentifiable> comparator = Comparator.comparing(PyramidIdentifiable::getHeight);
 
         //when

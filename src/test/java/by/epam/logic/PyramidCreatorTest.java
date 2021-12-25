@@ -40,6 +40,6 @@ public class PyramidCreatorTest {
         Pyramid createdPyramid = creator.create(inputData);
 
         //then
-        Assert.assertEquals(pyramid, createdPyramid);
+        Assert.assertNotEquals(pyramid, createdPyramid);
     }
 }

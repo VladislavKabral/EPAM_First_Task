@@ -27,7 +27,7 @@ public class PyramidRepositoryImpl implements PyramidRepository{
     }
 
     @Override
-    public List<PyramidIdentifiable> query(Specification specification) {
+    public List<PyramidIdentifiable> query(final Specification specification) {
         List<PyramidIdentifiable> pyramids = new ArrayList<>();
         for (PyramidIdentifiable pyramid: store.values()) {
             if (specification.specified(pyramid)) {
@@ -38,7 +38,7 @@ public class PyramidRepositoryImpl implements PyramidRepository{
     }
 
     @Override
-    public List<PyramidIdentifiable> sort(Comparator<PyramidIdentifiable> comparator) {
+    public List<PyramidIdentifiable> sort(final Comparator<PyramidIdentifiable> comparator) {
         List<PyramidIdentifiable> result = new ArrayList<>(store.values());
         result.sort(comparator);
         return result;

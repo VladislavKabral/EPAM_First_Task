@@ -150,6 +150,6 @@ public class PyramidCalculator {
 
         double capacity = calculateCapacity(pyramid);
 
-        return (capacity - truncatedCapacity) / truncatedCapacity;
+        return truncatedCapacity / (capacity - truncatedCapacity);
     }
 }

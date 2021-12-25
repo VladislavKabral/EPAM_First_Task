@@ -109,4 +109,22 @@ public class PyramidCalculatorTest {
         //then
         Assert.assertFalse(isBase);
     }
+
+    @Test
+    public void testCalculateRatioShouldCalculateRatioWhenCrossTheXY() {
+        //given
+        Pyramid pyramid = new Pyramid(new Point(5.0, 1.0, -5.0),
+                                      new Point(1.0, 1.0, -5.0),
+                                      new Point(1.0, 5.0, -5.0),
+                                      new Point(5.0, 5.0, -5.0),
+                                      new Point(2.5, 2.5, 5.0),
+                                    10.0);
+
+        PyramidCalculator calculator = new PyramidCalculator();
+        //when
+        double ratio = calculator.calculateRatio(pyramid, Axis.XY);
+
+        //then
+        Assert.assertEquals(3.22, ratio, 0.01);
+    }
 }
