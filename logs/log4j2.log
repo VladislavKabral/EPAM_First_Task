@@ -1,7 +1,2 @@
-2021-12-12 22:38:02,886 INFO b.e.d.DataReader [main] Data from file has read
-2021-12-12 22:38:02,926 WARN b.e.d.DataReader [main] Caught InvalidPath (Не удается найти указанный файл)
-2021-12-12 22:51:01,005 INFO b.e.l.PyramidCreator [main] Pyramid has created
-2021-12-12 22:51:55,924 INFO b.e.l.PyramidCreator [main] Pyramid has created
-2021-12-12 22:51:55,934 INFO b.e.l.PyramidCreator [main] Pyramid has created
-2021-12-12 22:57:32,571 INFO b.e.l.PyramidValidator [main] Line have been validated
-2021-12-12 22:57:32,591 INFO b.e.l.PyramidValidator [main] Line have been validated
+2021-12-25 21:12:35,925 INFO b.e.l.PyramidValidator [main] Line have been validated
+2021-12-25 21:12:36,324 INFO b.e.l.PyramidValidator [main] Line have been validated
